@@ -1,0 +1,63 @@
+{
+  "devices" : [ {
+    "@class" : "com.mycompany.hdm.devices.TVset",
+    "uid" : "homeDev0",
+    "name" : "TVset1",
+    "model" : "Philips 48PFT5500/12",
+    "status" : "OFF",
+    "serialNumber" : "48PFT5500/12",
+    "type" : "TVset",
+    "manufacturer" : "Philips",
+    "powerConsumption" : 150
+  }, {
+    "@class" : "com.mycompany.hdm.devices.WashMashine",
+    "uid" : "homeDev1",
+    "name" : "WashMash1",
+    "model" : "BOSCH WAT28660BY",
+    "status" : "ON",
+    "serialNumber" : "WAT28660BY",
+    "type" : "WashMashine",
+    "manufacturer" : "BOSCH",
+    "powerConsumption" : 620
+  }, {
+    "@class" : "com.mycompany.hdm.devices.TVset",
+    "uid" : "homeDev2",
+    "name" : "TVset2",
+    "model" : "LG 43UF640V",
+    "status" : "ON",
+    "serialNumber" : "43UF640V",
+    "type" : "TVset",
+    "manufacturer" : "LG",
+    "powerConsumption" : 130
+  }, {
+    "@class" : "com.mycompany.hdm.devices.WashMashine",
+    "uid" : "homeDev3",
+    "name" : "WashMash2",
+    "model" : "FREGGIA WOD129DJ",
+    "status" : "OFF",
+    "serialNumber" : "WOD129DJ",
+    "type" : "WashMashine",
+    "manufacturer" : "FREGGIA",
+    "powerConsumption" : 1020
+  }, {
+    "@class" : "com.mycompany.hdm.devices.TVset",
+    "uid" : "homeDev4",
+    "name" : "TVset3",
+    "model" : "Samsung UE40JU7000",
+    "status" : "OFF",
+    "serialNumber" : "UE40JU7000",
+    "type" : "TVset",
+    "manufacturer" : "Samsung",
+    "powerConsumption" : 100
+  }, {
+    "@class" : "com.mycompany.hdm.devices.Fridge",
+    "uid" : "homeDev5",
+    "name" : "Refr1",
+    "model" : "INDESIT NTS 14 AA (UA)",
+    "status" : "OFF",
+    "serialNumber" : "NTS 14 AA (UA)",
+    "type" : "Fridge",
+    "manufacturer" : "INDESIT",
+    "powerConsumption" : 250
+  } ]
+}
