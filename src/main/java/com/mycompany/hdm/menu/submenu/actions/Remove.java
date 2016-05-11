@@ -9,14 +9,12 @@ import com.mycompany.hdm.storage.Storage;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
 import static com.mycompany.hdm.devices.HomeDevices.printListDevices;
 import static com.mycompany.hdm.main.Main.logger;
 import static com.mycompany.hdm.rwdata.ReadWriteData.readFromFile;
-import static com.mycompany.hdm.rwdata.ReadWriteData.writeToFile;
 
 /**
  * Created by andrew on 04.05.2016.
@@ -47,7 +45,6 @@ public class Remove implements MenuItems {
                 try {
                     (uid.meetCriteria(devices, "homeDev" + input).get(0)).remove();
                     System.out.println("Done!");
-                    writeToFile(devices);
                 } catch (DevNotFoundException e) {
                     e.printStackTrace();
                 }
@@ -56,8 +53,6 @@ public class Remove implements MenuItems {
         }
         while (!input.equalsIgnoreCase(SUBITEMS.BACK.toString()) && !input.equalsIgnoreCase(SUBITEMS.EXIT.toString()));
     }
-
-
 
 
     private void showOptions() {
