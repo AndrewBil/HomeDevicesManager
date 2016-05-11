@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="HomeDevices" />
+        <module name="HomeDevicesManager" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="HomeDevices" target="1.7" />
+      <module name="HomeDevicesManager" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

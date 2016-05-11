@@ -6,9 +6,13 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.google.common.collect.ComparisonChain;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import static com.mycompany.hdm.rwdata.ReadWriteData.readFromFile;
+import static com.mycompany.hdm.rwdata.ReadWriteData.writeToFile;
 
 /**
  * Created by andrew on 29.04.2016.
@@ -70,7 +74,9 @@ public abstract class HomeDevices extends Devices implements Switchable {
     }
 
     public HomeDevices() {
-    };
+    }
+
+    ;
 
 
     public String getName() {
@@ -161,5 +167,21 @@ public abstract class HomeDevices extends Devices implements Switchable {
         } else {
             System.out.println("Device alredy OFF");
         }
+    }
+
+    public void remove() {
+        List<HomeDevices> devices = new ArrayList<>();
+        devices.clear();
+        try {
+            devices = readFromFile();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        for (HomeDevices dev : devices) {
+            if (this.getUid().equalsIgnoreCase(dev.getUid())) {
+                devices.remove(dev);
+            }
+        }
+        writeToFile(devices);
     }
 }

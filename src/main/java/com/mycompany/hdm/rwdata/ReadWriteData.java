@@ -46,7 +46,7 @@ public class ReadWriteData {
             e.printStackTrace();
         }
 
-
+        //   System.out.println("Writing OK");*/
     }
 }
 
